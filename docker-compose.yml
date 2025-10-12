@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  c-env:
+    build: .
+    container_name: c-env
+    volumes:
+      - .:/usr/src/app  # ホストのカレントディレクトリをマウント
+    working_dir: /usr/src/app
+    tty: true           # 対話モード（bash使えるように）
