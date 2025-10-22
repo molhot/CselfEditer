@@ -4,6 +4,10 @@
 int main(void){
     char c;
 
-    while (read(STDIN_FILENO, &c, 1) == 1);
+    while (read(STDIN_FILENO, &c, 1) == 1)
+    {
+        printf("char1の文字は: %c\n", c);
+    };
+
     return 0;
 }
