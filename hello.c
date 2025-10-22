@@ -6,6 +6,11 @@ int main(void){
 
     while (read(STDIN_FILENO, &c, 1) == 1)
     {
+        if (c == 'q')
+        {
+            printf("end input mode, bye : )");
+            return 0;
+        }
         printf("char1の文字は: %c\n", c);
     };
 
